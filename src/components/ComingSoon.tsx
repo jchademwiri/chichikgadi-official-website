@@ -11,20 +11,20 @@ const ComingSoon = () => {
           SITE NEARLY READY
         </p>
         <div className='h-2 rounded-full w-full bg-primary my-2'>
-          <div className='h-2 rounded-full w-3/4 bg-acccent'></div>
+          <div className='h-2 rounded-full w-1/2 bg-accent'></div>
         </div>
         <h2 className='py-2 md:text-3xl text-xl font-semibold'>
           Contact us Now
         </h2>
         <div className='py-2 md:py-4 grid md:grid-cols-2'>
-          <Link className='py-1 hover:text-acccent' href='tel:+27796787198'>
+          <Link className='py-1 hover:text-accent' href='tel:+27796787198'>
             +27 (0)79 678 7198
           </Link>
           <Link
-            className='py-1 hover:text-acccent'
-            href='mailto:brianm@tradinginglory.co.za'
+            className='py-1 hover:text-accent'
+            href='mailto:info@chichikgadi.co.za'
           >
-            brianm@tradinginglory.co.za
+            info@chichikgadi.co.za
           </Link>
         </div>
       </div>
@@ -32,9 +32,11 @@ const ComingSoon = () => {
         <p>
           © Powered and secured by{' '}
           <Link
+            rel='noreferrer'
+            target='_blank'
             title='We Would Love to work with your business, call us now '
-            href={`https://www.playhousemedia.net/`}
-            className='text-acccent hover:text-primary'
+            href={`https://www.jacobc.co.za/`}
+            className='text-accent hover:text-primary'
           >
             Playhouse Media Group
           </Link>
