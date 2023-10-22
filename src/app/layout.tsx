@@ -1,7 +1,7 @@
 import { ThemeProvider } from '@/components/ThemeProvider';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
-// import Navbar from '@/components/Navbar';
+import Navbar from '@/components/Navbar';
 // import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -28,7 +28,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* <Navbar /> */}
+          <Navbar />
           <ModeToggle />
           {children}
           {/* <Footer /> */}

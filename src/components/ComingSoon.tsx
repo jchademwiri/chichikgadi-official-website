@@ -4,7 +4,7 @@ const ComingSoon = () => {
   return (
     <section className='grid h-screen place-items-center text-center mx-10 '>
       <div>
-        <h1 className='md:text-8xl text-4xl font-bold py-6'>
+        <h1 className='md:text-7xl text-4xl font-bold py-6'>
           UNDER <br /> CONSTRUCTION
         </h1>
         <p className='md:text-4xl text-2xl py-2 md:py-4  font-thin tracking-wider'>
@@ -30,7 +30,7 @@ const ComingSoon = () => {
       </div>
       <footer className='md:my-5 my-10 py-5'>
         <p>
-          © Powered and secured by{' '}
+          © Developed by{' '}
           <Link
             rel='noreferrer'
             target='_blank'
