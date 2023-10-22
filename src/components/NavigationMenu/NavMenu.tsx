@@ -3,18 +3,18 @@ import { ModeToggle } from '../ModeToggle';
 import { Menu } from './Menu';
 import { MobileMenu } from './MobileNav';
 import Image from 'next/image';
-import { logo } from '@/data/images';
+import { logoIcon } from '@/data/images';
 
 const NavMenu = () => {
   return (
     <nav className='flex justify-between items-center py-4 max-w-6xl mx-auto w-[90%]'>
       <Link href='/' className='font-semibold'>
         <Image
-          src={logo}
+          src={logoIcon}
           alt='chichikgadi logo'
-          width={2805}
-          height={835}
-          className='w-auto h-14'
+          width={738}
+          height={741}
+          className='w-auto h-10'
         />
       </Link>
       <div className='flex items-center gap-1'>

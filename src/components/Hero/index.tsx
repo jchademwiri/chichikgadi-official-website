@@ -4,7 +4,8 @@ const Hero = () => {
   return (
     <section
       id='home'
-      className="box-shadow  bg-[url('/images/hero-bg.jpg')] bg-cover bg-no-repeat text-white"
+      className='box-shadow  bg-cover bg-no-repeat text-white'
+      // className="box-shadow  bg-[url('/images/hero-bg.jpg')] bg-cover bg-no-repeat text-white"
     >
       <div className='max-height-screen box mx-auto grid h-[90vh] w-11/12 max-w-[1240px] content-center  gap-4 p-4 py-8 '>
         <div className='grid content-center w-full '>
