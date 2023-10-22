@@ -2,12 +2,20 @@ import Link from 'next/link';
 import { ModeToggle } from '../ModeToggle';
 import { Menu } from './Menu';
 import { MobileMenu } from './MobileNav';
+import Image from 'next/image';
+import { logo } from '@/data/images';
 
-const Nav = () => {
+const NavMenu = () => {
   return (
-    <nav className='flex justify-between items-center py-4 max-w-6xl mx-auto w-[80%]'>
+    <nav className='flex justify-between items-center py-4 max-w-6xl mx-auto w-[90%]'>
       <Link href='/' className='font-semibold'>
-        JC
+        <Image
+          src={logo}
+          alt='chichikgadi logo'
+          width={2805}
+          height={835}
+          className='w-auto h-14'
+        />
       </Link>
       <div className='flex items-center gap-1'>
         <div className='hidden md:block'>
@@ -21,4 +29,4 @@ const Nav = () => {
     </nav>
   );
 };
-export default Nav;
+export default NavMenu;
