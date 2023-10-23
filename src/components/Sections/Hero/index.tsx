@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import { Button } from '../ui/button';
+import { Button } from '../../ui/button';
 
 const Hero = () => {
   return (
-    <section className=''>
+    <section className='h-screen'>
       <div className='flex py-24 md:flex-row flex-col items-center max-w-6xl mx-auto w-[90%] '>
         <div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
           <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-foreground'>
@@ -28,7 +28,6 @@ const Hero = () => {
           <Image
             className='object-cover object-center rounded'
             alt='hero'
-            // src='https://dummyimage.com/720x600'
             src='https://images.pexels.com/photos/8276364/pexels-photo-8276364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             width={720}
             height={600}

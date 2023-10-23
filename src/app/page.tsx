@@ -1,6 +1,4 @@
-// import ComingSoon from '@/components/ComingSoon';
-import Featured from '@/components/Featured';
-import Hero from '@/components/Hero';
+import { Featured, Hero } from '@/components/Sections';
 
 const Home = () => {
   return (

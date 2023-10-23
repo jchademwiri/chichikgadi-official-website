@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import { Card, CardContent, CardHeader } from '../ui/card';
-import { Button } from '../ui/button';
+import { Card, CardContent, CardHeader } from '../../ui/card';
+import { Button } from '../../ui/button';
 
 const Featured = () => {
   return (
-    <section className=''>
+    <section className='h-screen'>
       <div className='px-5 py-24 flex flex-wrap max-w-6xl mx-auto w-[90%]'>
         <div className='flex flex-col text-center w-full mb-20'>
           <h2 className='text-xs text-primary tracking-widest font-medium title-font mb-1'>
