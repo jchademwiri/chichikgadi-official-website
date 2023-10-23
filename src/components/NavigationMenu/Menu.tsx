@@ -13,7 +13,7 @@ import { links } from './links';
 
 export function Menu() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className=''>
       <NavigationMenuList>
         <NavigationMenuItem>
           {links.map((link) => (

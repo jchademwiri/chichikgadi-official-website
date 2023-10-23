@@ -7,7 +7,7 @@ import { logoIcon } from '@/data/images';
 
 const NavMenu = () => {
   return (
-    <nav className='flex justify-between items-center py-4 max-w-6xl mx-auto w-[90%]'>
+    <nav className='flex sticky top-0 bg-background justify-between items-center py-4 max-w-6xl mx-auto w-[90%]'>
       <Link href='/' className='font-semibold'>
         <Image
           src={logoIcon}
