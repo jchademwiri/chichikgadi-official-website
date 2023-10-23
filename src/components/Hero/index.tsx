@@ -1,46 +1,45 @@
-import Link from 'next/link';
+import Image from 'next/image';
+import { Button } from '../ui/button';
 
 const Hero = () => {
   return (
-    <section
-      id='home'
-      className='box-shadow  bg-cover bg-no-repeat text-white'
-      // className="box-shadow  bg-[url('/images/hero-bg.jpg')] bg-cover bg-no-repeat text-white"
-    >
-      <div className='max-height-screen box mx-auto grid h-[90vh] w-11/12 max-w-[1240px] content-center  gap-4 p-4 py-8 '>
-        <div className='grid content-center w-full '>
-          <div>
-            <h3 className='py-2 text-xs uppercase'>Call us now</h3>
-            <Link
-              className='py-2 text-accent'
-              target='_blank'
-              rel='noreferrer'
-              href='tel:+27727247569'
-            >
-              +27 74 049 1433
-            </Link>
-            <h1 className='py-2 leading-tight text-gray-200'>
-              Register your company today.
-            </h1>
-            <h3 className='font-light mb-7 '>
-              Includes everything you need to start an official company.
-            </h3>
-
-            <div className=' hover:animate-bounce w-max'>
-              <Link
-                target='_blank'
-                rel='noreferrer'
-                className='p-4 px-6 font-semibold rounded bg-primary animate-bounce '
-                href='https://wa.me/message/GN3V7YGW4CIDO1'
-              >
-                FREE CONSULTATION
-              </Link>
-            </div>
+    <section className=' w-full overflow-hidden'>
+      <div className='relative h-full w-full'>
+        <div className='absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]' />
+        <div className='absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]' />
+      </div>
+      <div className='flex px-5 py-24 md:flex-row flex-col items-center max-w-6xl mx-auto w-[90%] '>
+        <div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
+          <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-foreground'>
+            Before they sold out
+            <br className='hidden lg:inline-block' />
+            readymade gluten
+          </h1>
+          <p className='mb-8 leading-relaxed text-muted-foreground'>
+            Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
+            plant cold-pressed tacos poke beard tote bag. Heirloom echo park
+            mlkshk tote bag selvage hot chicken authentic tumeric truffaut
+            hexagon try-hard chambray.
+          </p>
+          <div className='flex justify-center gap-4'>
+            <Button size={'lg'}>Action Button One</Button>
+            <Button size={'lg'} variant={'secondary'}>
+              Action Button Two
+            </Button>
           </div>
+        </div>
+        <div className='lg:max-w-lg lg:w-full md:w-1/2'>
+          <Image
+            className='object-cover object-center rounded'
+            alt='hero'
+            // src='https://dummyimage.com/720x600'
+            src='https://images.pexels.com/photos/8276364/pexels-photo-8276364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            width={720}
+            height={600}
+          />
         </div>
       </div>
     </section>
   );
 };
-
 export default Hero;

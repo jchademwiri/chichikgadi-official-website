@@ -6,27 +6,27 @@ import { Button } from '../ui/button';
 const Footer = () => {
   return (
     <footer className=''>
-      <div className='px-5 py-8 flex items-center sm:flex-row flex-col max-w-6xl mx-auto w-[90%]'>
+      <div className='py-8 flex items-center sm:flex-row flex-col max-w-6xl mx-auto w-[90%]'>
         <Link
           href='/'
           className='flex items-center md:justify-start justify-center '
         >
           <Image src={logo} alt='Chichikgani logo' className='w-auto h-10' />
         </Link>
-        <p className='text-sm text-primary/50 sm:ml-4 sm:pl-4 sm:border-l sm:border-muted-foreground sm:py-2 sm:mt-0 mt-4'>
+        <p className='text-sm text-primary/70 sm:ml-4 sm:pl-4 sm:border-l sm:border-muted-foreground sm:py-2 sm:mt-0 mt-4'>
           © {new Date().getFullYear()} Chichikgadi —
           <Link
-            href='https://twitter.com/jchademwiri'
+            href='https://jacobc.co.za'
             className='text-muted-foreground ml-1'
             target='_blank'
             rel='noopener noreferrer'
           >
-            @jchademwiri
+            by @jchademwiri
           </Link>
         </p>
         <span className='inline-flex  sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start'>
-          <Button size={'icon'} variant={'ghost'} className=''>
-            <Link href='/' className=''>
+          <Button size={'icon'} variant={'ghost'}>
+            <Link href='/'>
               <svg
                 fill='currentColor'
                 stroke-linecap='round'
@@ -39,8 +39,8 @@ const Footer = () => {
               </svg>
             </Link>
           </Button>
-          <Button size={'icon'} variant={'ghost'} className=''>
-            <Link href='/' className=''>
+          <Button size={'icon'} variant={'ghost'}>
+            <Link href='/'>
               <svg
                 fill='currentColor'
                 stroke-linecap='round'
@@ -53,8 +53,8 @@ const Footer = () => {
               </svg>
             </Link>
           </Button>
-          <Button size={'icon'} variant={'ghost'} className=''>
-            <Link href='/' className=''>
+          <Button size={'icon'} variant={'ghost'}>
+            <Link href='/'>
               <svg
                 fill='none'
                 stroke='currentColor'
@@ -69,8 +69,8 @@ const Footer = () => {
               </svg>
             </Link>
           </Button>
-          <Button size={'icon'} variant={'ghost'} className=''>
-            <Link href='/' className=''>
+          <Button size={'icon'} variant={'ghost'}>
+            <Link href='/'>
               <svg
                 fill='currentColor'
                 stroke='currentColor'
