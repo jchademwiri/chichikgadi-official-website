@@ -3,8 +3,12 @@ import { Button } from '../ui/button';
 
 const MyHero = () => {
   return (
-    <section className='max-w-6xl mx-auto w-[90%]'>
-      <div className='container mx-auto flex px-5 py-24 md:flex-row flex-col items-center'>
+    <section className=''>
+      <div className='relative h-full w-full'>
+        <div className='absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]' />
+        <div className='absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]' />
+      </div>
+      <div className='flex px-5 py-24 md:flex-row flex-col items-center max-w-6xl mx-auto w-[90%] '>
         <div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
           <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-foreground'>
             Before they sold out
@@ -18,9 +22,9 @@ const MyHero = () => {
             hexagon try-hard chambray.
           </p>
           <div className='flex justify-center gap-4'>
-            <Button size={'lg'}>Action Button</Button>
+            <Button size={'lg'}>Action Button One</Button>
             <Button size={'lg'} variant={'secondary'}>
-              Action Button
+              Action Button Two
             </Button>
           </div>
         </div>

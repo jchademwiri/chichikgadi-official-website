@@ -7,10 +7,10 @@ const Featured = () => {
     <section className=''>
       <div className='px-5 py-24 flex flex-wrap max-w-6xl mx-auto w-[90%]'>
         <div className='flex flex-col text-center w-full mb-20'>
-          <h2 className='text-xs text-blue-400 tracking-widest font-medium title-font mb-1'>
+          <h2 className='text-xs text-primary tracking-widest font-medium title-font mb-1'>
             ROOF PARTY POLAROID
           </h2>
-          <h1 className='sm:text-3xl text-2xl font-medium title-font text-white'>
+          <h1 className='sm:text-3xl text-2xl font-medium title-font '>
             Master Cleanse Reliac Heirloom
           </h1>
         </div>
@@ -18,7 +18,7 @@ const Featured = () => {
           <Card className='p-4'>
             <div className=''>
               <div className='flex items-center mb-3'>
-                <div className='w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-primary  flex-shrink-0'>
+                <Button size={'icon'} className='rounded-full mr-3 w-8 h-8'>
                   <svg
                     fill='none'
                     stroke='currentColor'
@@ -30,7 +30,7 @@ const Featured = () => {
                   >
                     <path d='M22 12h-4l-3 9L9 3l-3 9H2'></path>
                   </svg>
-                </div>
+                </Button>
                 <h2 className='text-lg title-font font-medium'>
                   Shooting Stars
                 </h2>
@@ -62,7 +62,7 @@ const Featured = () => {
           <Card className='p-4'>
             <div className=''>
               <div className='flex items-center mb-3'>
-                <div className='w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-primary flex-shrink-0'>
+                <Button size={'icon'} className='rounded-full mr-3 w-8 h-8'>
                   <svg
                     fill='none'
                     stroke='currentColor'
@@ -75,7 +75,7 @@ const Featured = () => {
                     <path d='M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2'></path>
                     <circle cx='12' cy='7' r='4'></circle>
                   </svg>
-                </div>
+                </Button>
                 <h2 className=' text-lg font-medium'>The Catalyzer</h2>
               </div>
               <div className='flex-grow'>
@@ -108,7 +108,7 @@ const Featured = () => {
           <Card className='p-4'>
             <div className=''>
               <div className='flex items-center mb-3'>
-                <div className='w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-primary flex-shrink-0'>
+                <Button size={'icon'} className='rounded-full mr-3 w-8 h-8'>
                   <svg
                     fill='none'
                     stroke='currentColor'
@@ -122,7 +122,7 @@ const Featured = () => {
                     <circle cx='6' cy='18' r='3'></circle>
                     <path d='M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12'></path>
                   </svg>
-                </div>
+                </Button>
                 <h2 className=' text-lg title-font font-medium'>Neptune</h2>
               </div>
               <div className='flex-grow'>

@@ -40,7 +40,7 @@ const Footer = () => {
             </Link>
           </Button>
           <Button size={'icon'} variant={'ghost'} className=''>
-            <Link href='/' className='ml-3'>
+            <Link href='/' className=''>
               <svg
                 fill='currentColor'
                 stroke-linecap='round'
@@ -54,7 +54,7 @@ const Footer = () => {
             </Link>
           </Button>
           <Button size={'icon'} variant={'ghost'} className=''>
-            <Link href='/' className='ml-3'>
+            <Link href='/' className=''>
               <svg
                 fill='none'
                 stroke='currentColor'
@@ -70,7 +70,7 @@ const Footer = () => {
             </Link>
           </Button>
           <Button size={'icon'} variant={'ghost'} className=''>
-            <Link href='/' className='ml-3'>
+            <Link href='/' className=''>
               <svg
                 fill='currentColor'
                 stroke='currentColor'
