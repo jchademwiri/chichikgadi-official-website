@@ -4,7 +4,7 @@ import { Card } from './ui/card';
 
 const CardsComponent = () => {
   return (
-    <div className='py-16 flex flex-wrap max-w-6xl mx-auto'>
+    <section className='flex flex-wrap max-w-6xl mx-auto my-5'>
       <div className='flex flex-col text-center w-full mb-20'>
         <h2 className='text-xs text-primary tracking-widest font-medium title-font mb-1'>
           ROOF PARTY POLAROID
@@ -147,7 +147,7 @@ const CardsComponent = () => {
           </div>
         </Card>
       </div>
-    </div>
+    </section>
   );
 };
 export default CardsComponent;

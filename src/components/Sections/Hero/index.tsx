@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import { Button } from '../../ui/button';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
     <section id='home' className='h-[90vh] grid place-items-center'>
-      <div className='flex py-24 md:flex-row flex-col items-center max-w-6xl mx-auto w-[90%]'>
+      <div className='flex md:flex-row flex-col items-center max-w-6xl mx-auto w-[90%]'>
         <div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
           <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-foreground'>
             Before they sold out
@@ -18,9 +19,11 @@ const Hero = () => {
             hexagon try-hard chambray.
           </p>
           <div className='flex justify-center gap-4'>
-            <Button size={'lg'}>Action Button One</Button>
+            <Button size={'lg'}>
+              <Link href='/#projects'>Chat With Us Now</Link>
+            </Button>
             <Button size={'lg'} variant={'secondary'}>
-              Action Button Two
+              <Link href='/#projects'>See Our Projects</Link>
             </Button>
           </div>
         </div>

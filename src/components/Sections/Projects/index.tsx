@@ -1,42 +1,27 @@
 import ProjectCard from '@/components/ProjectCard';
-
-const projects: Project[] = [
-  {
-    category: 'Civil Engineering',
-    date: 'Jun 2020',
-    client: 'City of Tswane',
-    title: 'Bitters hashtag waistcoat fashion axe chia unicorn',
-    description:
-      'Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.',
-  },
-  {
-    category: 'General Building',
-    date: 'Sep 2022',
-    client: 'City of Ekurhuleni',
-    title: 'New Project Name fashion axe chia unicorn',
-    description:
-      'Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.',
-  },
-  {
-    category: 'Plant Hire',
-    date: 'Feb 2022',
-    client: 'City of Mbombela',
-    title: 'New Project Name in Plant Hire',
-    description:
-      'Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.',
-  },
-];
+import { projects } from './projects';
 
 const Projects = () => {
   return (
-    <section id='projects' className='min-h-[90vh]'>
-      <section className='flex py-24 md:flex-row flex-col items-center max-w-6xl mx-auto w-[90%]'>
-        <div className='py-24'>
-          <div className='-my-8 divide-y-2 divide-muted-foreground'>
-            {projects.map((project, index) => (
-              <ProjectCard key={index} {...project} />
-            ))}
-          </div>
+    <section id='projects' className='min-h-[90vh] py-10'>
+      <section className='max-w-6xl mx-auto w-[90%]'>
+        <div className='text-center mx-auto mb-20 lg:w-1/2'>
+          <h2 className='text-xs text-primary tracking-widest font-medium uppercase mb-1'>
+            Completed and Current Projects
+          </h2>
+          <h1 className='sm:text-3xl text-2xl font-medium'>
+            Our Experiance and Expeties
+          </h1>
+          <p className='text-muted-foreground py-3'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            voluptates odio inventore iste rem maxime nesciunt, temporibus unde
+            expedita ipsa.
+          </p>
+        </div>
+        <div className='divide-y-2 divide-muted-foreground'>
+          {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
         </div>
       </section>
     </section>

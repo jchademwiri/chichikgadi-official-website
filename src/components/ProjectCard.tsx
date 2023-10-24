@@ -9,7 +9,7 @@ const ProjectCard = ({
   description,
 }: Project) => {
   return (
-    <div className='py-8 flex flex-wrap md:flex-nowrap'>
+    <div className='flex flex-wrap md:flex-nowrap'>
       <div className='md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col'>
         <span className='font-semibold uppercase title-font text-muted-foreground'>
           {category}
