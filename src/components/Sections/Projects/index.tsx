@@ -18,7 +18,7 @@ const Projects = () => {
             expedita ipsa.
           </p>
         </div>
-        <div className='divide-y-2 divide-muted-foreground'>
+        <div className=''>
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

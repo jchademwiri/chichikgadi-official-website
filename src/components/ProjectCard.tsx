@@ -9,8 +9,8 @@ const ProjectCard = ({
   description,
 }: Project) => {
   return (
-    <div className='flex flex-wrap md:flex-nowrap'>
-      <div className='md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col'>
+    <div className='gap-5 flex py-4 flex-wrap md:flex-nowrap border-b-2 border-secondary/70'>
+      <div className='md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col '>
         <span className='font-semibold uppercase title-font text-muted-foreground'>
           {category}
         </span>
@@ -23,7 +23,7 @@ const ProjectCard = ({
         </h2>
         <p className='leading-relaxed'>{description}</p>
         <Button variant={'link'} className='px-0'>
-          <Link href='/' className=' inline-flex items-center mt-4'>
+          <Link href='/' className='inline-flex items-center mt-4'>
             Learn More
             <svg
               className='w-4 h-4 ml-2'
