@@ -2,15 +2,15 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Link from 'next/link';
 
-const Featured = () => {
+const Contact = () => {
   return (
-    <section id='featured' className='min-h-[90vh]'>
+    <section id='contact' className='min-h-[90vh]'>
       <div className='px-5 py-24 flex flex-wrap max-w-6xl mx-auto w-[90%]'>
         <div className='flex flex-col text-center w-full mb-20'>
           <h2 className='text-xs text-primary tracking-widest font-medium title-font mb-1'>
             ROOF PARTY POLAROID
           </h2>
-          <h1 className='sm:text-3xl text-2xl font-medium title-font '>
+          <h1 className='sm:text-3xl text-2xl font-medium title-font'>
             Master Cleanse Reliac Heirloom
           </h1>
         </div>
@@ -154,4 +154,4 @@ const Featured = () => {
     </section>
   );
 };
-export default Featured;
+export default Contact;
