@@ -7,8 +7,8 @@ import { logoIcon } from '@/data/images';
 
 const NavMenu = () => {
   return (
-    <nav className='flex sticky top-0 bg-background justify-between items-center py-4 max-w-6xl mx-auto w-[90%]'>
-      <Link href='/' className='font-semibold'>
+    <nav className='flex sticky top-0 bg-background justify-between z-50 items-center py-4 max-w-6xl mx-auto w-[90%]'>
+      <Link href='/#home' className='font-semibold'>
         <Image
           src={logoIcon}
           alt='chichikgadi logo'
