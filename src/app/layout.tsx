@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import NavMenu from '@/components/NavigationMenu/NavMenu';
 import Footer from '@/components/Footer';
+import { Toaster } from '@/components/ui/toaster';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
           <NavMenu />
           {children}
           <Footer />
+          <Toaster />
           <Analytics />
         </ThemeProvider>
       </body>

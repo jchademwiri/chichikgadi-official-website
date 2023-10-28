@@ -3,8 +3,8 @@ import LogoComponent from './LogoComponent';
 
 const ClientLogos = () => {
   return (
-    <section className=' bg-card-foreground w-full mx-auto py-20 sm:py-32'>
-      <div className=''>
+    <section className=' bg-secondary py-20'>
+      <div className='max-w-6xl mx-auto w-[90%]'>
         <h2 className='text-center text-lg font-semibold leading-8 '>
           Trusted by the world’s most innovative teams
         </h2>
