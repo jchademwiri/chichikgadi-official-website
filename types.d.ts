@@ -5,3 +5,8 @@ type Project = {
   title: string;
   description: string;
 };
+
+type LogoIcon = {
+  src: string;
+  alt: string;
+};

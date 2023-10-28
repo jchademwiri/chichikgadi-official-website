@@ -8,7 +8,6 @@ const Contact = () => {
     <section id='contact' className='min-h-[90vh] py-16'>
       <div className='flex gap-5 flex-wrap max-w-6xl mx-auto w-[90%] relative'>
         <CardsComponent />
-
         <ContactMap />
       </div>
     </section>
