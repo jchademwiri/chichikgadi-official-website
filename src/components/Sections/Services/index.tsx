@@ -39,7 +39,7 @@ const Services = () => {
           </div>
         </section>
       </div>
-      <ClientLogos />
+      {/* <ClientLogos /> */}
     </section>
   );
 };

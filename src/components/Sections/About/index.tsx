@@ -1,4 +1,3 @@
-import CardsComponent from '@/components/CardsComponent';
 import Image from 'next/image';
 
 const About = () => {
