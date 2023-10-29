@@ -1,7 +1,14 @@
+import { ReactNode } from 'react';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 
-const ServicesCard = ({ title, description, icon }: any) => {
+type ServiceCard = {
+  title: string;
+  description: string;
+  icon: ReactNode;
+};
+
+const ServiceCard = ({ title, description, icon }: ServiceCard) => {
   return (
     <Card className='p-4 hover:border-primary/50 cursor-pointer'>
       <div className=''>
@@ -24,4 +31,4 @@ const ServicesCard = ({ title, description, icon }: any) => {
     </Card>
   );
 };
-export default ServicesCard;
+export default ServiceCard;

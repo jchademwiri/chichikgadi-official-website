@@ -1,5 +1,5 @@
 import ClientLogos from '@/components/ClientLogos';
-import ServicesCard from '@/components/ServicesCard';
+import ServiceCard from '@/components/ServiceCard';
 import { Building2, FolderKanban, Waves } from 'lucide-react';
 
 const Services = () => {
@@ -16,22 +16,22 @@ const Services = () => {
             </h1>
           </div>
           <div className='grid lg:grid-cols-3 sm:grid-cols-2 gap-2'>
-            <ServicesCard
+            <ServiceCard
               icon={<Waves />}
               title='Water & Sanitation'
               description='We are committed to providing sustainable water and sanitation solutions to ensure clean, safe, and reliable access to these essential resources. Our expertise extends from water treatment and distribution to wastewater management, improving the quality of life for communities and businesses.'
             />
-            <ServicesCard
+            <ServiceCard
               icon={<Building2 />}
               title='Building Construction'
               description='Our skilled team of professionals excels in delivering top-notch construction services. From residential to commercial projects, we bring your vision to life with precision, quality, and innovation. We understand that every structure tells a story, and we are here to help you create yours.'
             />
-            <ServicesCard
+            <ServiceCard
               icon={<Building2 />}
               title='Civil Engineering'
               description='With a foundation in sound engineering principles, we undertake civil engineering projects that stand the test of time. Our services cover a wide spectrum, including road infrastructure, bridges, and more. We pride ourselves on excellence in design and execution, ensuring safe and efficient solutions.'
             />
-            <ServicesCard
+            <ServiceCard
               icon={<FolderKanban />}
               title='Project Management'
               description='Effective project management is the key to success. We offer end-to-end project management services that keep your projects on track, on time, and within budget. Our experienced professionals ensure seamless coordination, communication, and problem-solving, turning your ideas into reality.'
