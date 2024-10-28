@@ -1,3 +1,4 @@
-import heroBg from '/public/images/hero-bg.webp';
+import logo from '/public/images/logo.png';
+import logoIcon from '/public/images/logo-icon.png';
 
-export { heroBg };
+export { logo, logoIcon };

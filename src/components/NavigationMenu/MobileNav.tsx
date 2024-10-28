@@ -28,8 +28,8 @@ export function MobileMenu() {
           <MenuIcon />
         </Button>
       </SheetTrigger>
-      <SheetContent>
-        <SheetHeader>
+      <SheetContent side={'left'}>
+        <SheetHeader className=''>
           <SheetTitle>Navigation Menu</SheetTitle>
           <SheetDescription>We are at your service.</SheetDescription>
         </SheetHeader>
@@ -39,8 +39,10 @@ export function MobileMenu() {
             <NavigationMenuItem className='my-4'>
               {links.map((link) => (
                 <div key={link.href}>
-                  <Link href={link.href} legacyBehavior passHref >
-                    <NavigationMenuLink className='grid gap-2 rounded-sm p-2 hover:bg-accent'>
+                  <Link href={link.href} legacyBehavior passHref>
+                    <NavigationMenuLink
+                      className={`grid gap-2 rounded-sm p-2 hover:bg-accent`}
+                    >
                       {link.title}
                     </NavigationMenuLink>
                   </Link>

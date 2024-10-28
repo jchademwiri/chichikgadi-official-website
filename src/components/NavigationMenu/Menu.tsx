@@ -13,12 +13,14 @@ import { links } from './links';
 
 export function Menu() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className=''>
       <NavigationMenuList>
         <NavigationMenuItem>
           {links.map((link) => (
             <Link key={link.href} href={link.href} legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <NavigationMenuLink
+                className={`${navigationMenuTriggerStyle()} mx-1`}
+              >
                 {link.title}
               </NavigationMenuLink>
             </Link>

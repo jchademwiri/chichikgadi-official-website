@@ -3,7 +3,9 @@ import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-// import Nav from '@/components/NavigationMenu/Nav';
+import NavMenu from '@/components/NavigationMenu/NavMenu';
+import Footer from '@/components/Footer';
+import { Toaster } from '@/components/ui/toaster';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,10 +28,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* <Navbar /> */}
-          {/* <Nav /> */}
+          <NavMenu />
           {children}
-          {/* <Footer /> */}
+          <Footer />
+          <Toaster />
           <Analytics />
         </ThemeProvider>
       </body>

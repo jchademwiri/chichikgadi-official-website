@@ -1,23 +1,22 @@
-'use client';
 export const links: { title: string; href: string }[] = [
   {
     title: 'Home',
-    href: '/',
+    href: '/#home',
   },
   {
     title: 'Services',
-    href: '/services',
+    href: '/#services',
   },
   {
     title: 'Projects',
-    href: '/projects',
+    href: '/#projects',
   },
   {
     title: 'About',
-    href: '/about',
+    href: '/#about',
   },
   {
     title: 'Contact',
-    href: '/contact',
+    href: '/#contact',
   },
 ];
